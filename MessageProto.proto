@@ -1,0 +1,36 @@
+
+
+
+syntax = "proto2";
+option java_package = "com.dream.pb";
+//option java_outer_classname = "Message";
+
+enum StatusEnum {
+    OPEN = 1;
+    CLOSE = 2;
+}
+
+message Head {
+    optional int32 code = 1;
+    optional string msg = 2;
+}
+
+message Body {
+    optional int32 count = 1;
+    optional string content = 2;
+}
+
+message Message {
+    required int32 int32Value = 1;
+    repeated int32 int32ListValue = 2;
+    optional string stringValue = 3;
+    optional string stringValue128 = 4;
+    optional string stringValue1024 = 5;
+    repeated string stringListValue = 6;
+    optional float floatValue = 7;
+    optional double doubleValue = 8;
+    optional bool boolValue = 9;
+    optional StatusEnum status = 10;
+    optional Head head = 11;
+    repeated Body body = 12;
+}

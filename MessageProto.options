@@ -1,0 +1,2 @@
+Message.stringValue128 max_size:128
+Message.stringValue1024 max_size:1024
