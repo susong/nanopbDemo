@@ -1,6 +1,3 @@
-
-
-
 syntax = "proto2";
 option java_package = "com.dream.pb";
 //option java_outer_classname = "Message";
@@ -25,7 +22,6 @@ message Message {
     repeated int32 int32ListValue = 2;
     optional string stringValue = 3;
     optional string stringValue128 = 4;
-    optional string stringValue1024 = 5;
     repeated string stringListValue = 6;
     optional float floatValue = 7;
     optional double doubleValue = 8;
